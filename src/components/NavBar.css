@@ -1,0 +1,68 @@
+/* fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Estilos para el contenedor de navegación */
+nav {
+  font-family: 'Candara', sans-serif;
+  background-color: #2079ed;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Estilos para los enlaces */
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: 600; 
+  font-size: 1.1em;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Efecto hover para el enlace */
+nav a:hover {
+  color: #f024ff; /* Cambiar color de texto al pasar el mouse */
+}
+
+/* Animación de subrayado en hover */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff17a6;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%; /* Expande la línea de subrayado al pasar el mouse */
+}
+.user-status{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  color: #fafafa;
+  font-weight: bolder;
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
